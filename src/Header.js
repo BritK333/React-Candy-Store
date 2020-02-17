@@ -6,16 +6,16 @@ function Header() {
   return (
     <div className="header">
       <img
-          src={SusieLogo}
-          alt="Susie's South Forty logo"
-          className="susie-logo"
-        />
-      
+        src={SusieLogo}
+        alt="Susie's South Forty logo"
+        className="susie-logo"
+      />
+
       <h1>Susie's South Forty Confections</h1>
       <h2>"Every Batch Made From Scratch"</h2>
 
       <ul>
-      <li>
+        <li>
           <Link to="/" className="link">
             Home
           </Link>
@@ -38,6 +38,11 @@ function Header() {
         <li>
           <Link to="/business-gifts" className="link">
             Business Gifts
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart" className="link">
+            Cart
           </Link>
         </li>
       </ul>

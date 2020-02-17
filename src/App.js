@@ -8,6 +8,7 @@ import Products from "./Products";
 import Occasions from "./Occasions";
 import Baskets from "./Baskets";
 import BusinessGifts from "./BusinessGifts";
+import Cart from "./Cart"
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
         <Route path="/business-gifts">
           <BusinessGifts />
         </Route>
+
+        <Route path="/cart">
+          <Cart />
+        </Route>
+
       </Switch>
 
       <div>
