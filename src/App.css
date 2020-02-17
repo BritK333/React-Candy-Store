@@ -1,38 +1,311 @@
-.App {
+App {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+nav {
+  background-color: rgb(238, 28, 36);
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.susie-logo {
+  width: 95px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: -10px;
+  padding: auto;
+  float: left;
+}
+
+.logo {
+  display: none;
+}
+
+.header h1 {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 30px;
+  width: 60%;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.header h2 {
+  color: #ffffff;
+  margin: -10px 0 0 20px;
+  font-size: 12px;
+}
+
+ul {
+  display: flex;
+  float: right;
+  width: 50%;
+  margin-top: -10px;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+}
+
+li .link {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li .link:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero-susie {
+  display: block;
+  text-align: center;
+  background-color: rgb(243, 246, 246);
+}
+
+.ssf-storefront {
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  text-shadow: 2px 2px 2px #000;
+  background-color: rgb(238, 28, 36);
+  width: 100%;
+  height: auto;
+  margin-top: -4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.oneRow {
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.column1 {
+  width: 20%;
+  margin: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column2 {
+  width: 20%;
+  margin: 0 20px;
 }
+
+.column3 {
+  width: 20%;
+  margin: 0 20px;
+}
+
+.column4 {
+  width: 20%;
+  margin: 0 20px;
+}
+
+.column5 {
+  width: 20%;
+  margin: 0 20px;
+}
+
+.productsHero,
+.occasionsHero,
+.basketsHero,
+.businessHero {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.hero-img-products {
+  text-align: center;
+  background-color: rgb(229, 234, 234);
+}
+
+.hero-img-occasions {
+  text-align: center;
+  opacity: 0.8;
+  background-color: rgb(70, 63, 60);
+}
+
+.allRowImgs {
+  text-align: center;
+}
+
+.rowImgs {
+  width: 100%;
+}
+
+.rowImgsVday,
+.rowImgsBasket,
+.rowImgsBusiness {
+  width: 100%;
+  display: flex;
+}
+
+.rowImgsVday h3 {
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #000;
+  color: red;
+  font-weight: 900;
+  width: 65%;
+  margin: 20px 70px;
+}
+
+.rowImgsBasket h3 {
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #888;
+  color: #000;
+  font-weight: 900;
+  width: 65%;
+  margin: 20px 70px;
+}
+
+.rowImgsVday p {
+  font-size: 12px;
+  text-shadow: 1px 1px 0.5px #000;
+  color: red;
+  width: 65%;
+  margin: 20px 70px;
+}
+
+.rowImgsBasket p {
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #888;
+  color: #000;
+  width: 65%;
+  margin: 20px 70px;
+}
+
+.vdayRow {
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  background-image: linear-gradient(
+    rgb(255, 255, 255, 0.1) 30%,
+    rgb(139, 0, 0, 0.4)
+  );
+  border: 2px solid red;
+  margin: 20px;
+}
+
+.basketsTopRow,
+.businessTopRow {
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  background-image: linear-gradient(
+    rgb(245, 222, 173, 0.1),
+    rgb(139, 69, 19, 0.4)
+  );
+  border: 0.5px solid #888;
+}
+
+/* Pages - begin styling for individual products */
+.vDay {
+  width: 35%;
+  margin: 20px 60px 20px 10px;
+  border: 0.5px solid #888;
+  box-shadow: 10px 10px 20px #888;
+}
+
+.teacher-basket,
+.oil-hammered-tin {
+  width: 20%;
+  height: auto;
+  border: 0.5px solid #888;
+  margin: 20px 65px 20px 0;
+  box-shadow: 10px 10px 20px #888;
+}
+
+.texasTrash {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.pecanToffee,
+.birthday,
+.chocTin {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.winnerCaramels,
+.thankYou,
+.cowboyChristmas {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.fudgeRichey,
+.anniversary,
+.blackGold {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.kickerPralines,
+.congrats,
+.oilDerrick,
+.texasCrude,
+.pumpJack,
+.texasRedTrim {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.assortedChocolates,
+.halloween,
+.snowmanTrash {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.otherConfections,
+.christmas,
+.oilfieldTin {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.funStuff {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+.whatsNew {
+  width: 25%;
+  margin: 20px;
+  border: 0.5px solid #888;
+  box-shadow: 8px 8px 20px #999;
+}
+
+/* end styling for indiv. Products page */
